@@ -4,10 +4,16 @@ Formula for text-as-data research
 
 What question do you want to answer? This should be something you *actually* want to know, and it should end in a question mark.
 
+Does the importance (type) of the political agenda affects the level of bias in newsposts?
 
 What source of text data will you use?
 
 What are two possible answers to the question?
+
+Yes, it does
+No, it does not 
+
+If it does and results are statistically significant there is ground for more detailed questions.
 
 How will the results of the quantitative text analysis demonstrate which of those answers is correct?
 

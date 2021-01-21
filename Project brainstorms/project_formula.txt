@@ -4,10 +4,13 @@ Formula for text-as-data research
 
 What question do you want to answer? This should be something you *actually* want to know, and it should end in a question mark.
 
+How can I get better at R in my free time? 
 
 What source of text data will you use?
 
 What are two possible answers to the question?
+
+I believe maybe I can practice statistical analysis in my own time. I can also watch tutorials and guides to help me develop my skills. 
 
 How will the results of the quantitative text analysis demonstrate which of those answers is correct?
 

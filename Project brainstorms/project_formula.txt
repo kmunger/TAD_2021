@@ -3,11 +3,13 @@ Formula for text-as-data research
 
 
 What question do you want to answer? This should be something you *actually* want to know, and it should end in a question mark.
-e
+Has Trump's rhetoric surrounding "fake news" increased distrust of media on Twitter?
 
 What source of text data will you use?
+All of Trump's transcribed speeches as president and twitter data
 
 What are two possible answers to the question?
+Yes he has increased media distrst, no he has not affected media distrust
 
 How will the results of the quantitative text analysis demonstrate which of those answers is correct?
-
+If tweets involving distrust of media increase as Trump's frequency of using the phrase "fake news" increases, it will provide some evidence that he has increased media distrust.

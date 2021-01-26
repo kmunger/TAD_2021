@@ -3,11 +3,11 @@ Formula for text-as-data research
 
 
 What question do you want to answer? This should be something you *actually* want to know, and it should end in a question mark.
-
+Does media coverage of Indigenous American reservation life skew negative or positive?
 
 What source of text data will you use?
-
+News articles with special weight added to headlines
 What are two possible answers to the question?
-
+Yes, media outlets tend to place excess emphasis on alcoholism and sexual/domestic violence or No, media outlets have focused on hope and economic development 
 How will the results of the quantitative text analysis demonstrate which of those answers is correct?
-
+Through training the machine to determine which words ("ADDICTION, "VIOLENCE") or ("HOPE", "OPPORTUNITY") feature more in both headlines and articles.

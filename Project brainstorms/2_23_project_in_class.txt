@@ -1,0 +1,18 @@
+
+What research question do you want to answer?
+
+
+What are two possible answers?
+
+
+What are the documents of text data you will analyze?
+
+
+
+
+Give two examples of documents in the corpus that you expect will be high in similarity to each other? Two examples that are *low* in similarity?
+
+
+
+
+

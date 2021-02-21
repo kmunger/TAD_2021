@@ -21,13 +21,17 @@ data("data_corpus_inaugural")
 
 df <- texts(data_corpus_inaugural)
 
+df[1]
 ## Lexical diversity measures
 
 # TTR 
 
 toks <- tokens(data_corpus_inaugural) 
 
+
 tokenz <- lengths(toks)
+
+tokenz
 
 # typez <- lapply(lapply(tokens,  unique ), length)
 typez <- ntype(df)
@@ -45,8 +49,10 @@ plot(ttr)
 #df$year<-as.numeric(df$year)
 
 #aggregate(df$ttr, by=list(df$year), FUN=mean)
-aggregate(ttr, by = list(docvars(data_corpus_inaugural)$President), FUN = mean)
-(df$party)
+
+aggregate(ttr, by = list(docvars(data_corpus_inaugural)$Party), FUN = mean)
+
+
 
 # another way:
 textstat_lexdiv(dfm(data_corpus_inaugural, groups = "President", verbose = FALSE))

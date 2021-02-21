@@ -18,3 +18,5 @@ require(quanteda)
   
 
 #6. Calculate the Manhattan distance between the two sentences you've constructed (by hand!)
+
+

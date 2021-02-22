@@ -54,6 +54,12 @@ tapply(hony$shares_count, year, sum) # sum of shares by year
 
 #8. What was the total number of likes received by posts published each month?
   
+month <- substr(hony$created_time, 6, 7) # extracts month from date created variable
+tapply(hony$likes_count, month, sum) # sum of likes by month
 
-
+#answer:
+#      01       02       03       04       05       06       07       08 
+#44752181 37852600 43590604 53458837 53624742 64106134 64144832 74450372 
+#09       10       11       12 
+#63820255 63112716 54466901 31307333 
 

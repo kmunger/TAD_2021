@@ -6,7 +6,7 @@
 rm(list = ls())
 
 # set path where our data are stored
-setwd("C:/Users/kevin/Documents/GitHub/TAD_2019/R_lessons/intro_R")
+setwd("C:/Users/kevin/Documents/GitHub/TAD_2021/R lessons/")
 
 # load required libraries
 library(quanteda)
@@ -50,6 +50,8 @@ lgdict
 
 # Run the conservative manifestos through this dictionary
 manifestos_lg <- dfm(manifestos_df$text, dictionary = lgdict)
+
+
 
 # how does this look
 as.matrix(manifestos_lg)[1:5, 1:5]
@@ -106,29 +108,6 @@ plot(year,
      xlab="Year", ylab="Icarian-ness", type="b", pch=19)
 
 
-
-#########Practice questions:
-
-
-####I'd like you to have experience creating documents from scratch
-
-####Find one of the previous in-class practices and replace the existing questions and answers with these questions and your answers
-
-####Be sure to save it as a new file, with a new filename!
-
-
-
-# 1. Which president's inaugural address was highest in anxiety?
-
-
-
-# 2. How about positive affect?
-
-
-#3. Look at the graphs you've made --- are there any issues with the analysis you can think of? Think about how dictionaries work.
-
-
-#4. Apply a simple fix to adjust for the issue you identified in question 3
 
 
 

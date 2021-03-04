@@ -4,11 +4,11 @@
 # clear global environment
 rm(list = ls())
 
-setwd("C:/Users/kevin/Dropbox/TAD_2019/R_practice_staging")
+setwd("C:/Users/kevin/Documents/GitHub/TAD_2021/R lessons/")
 
 # load required libraries
 library(quanteda)
-#install.packages('quanteda.textmodels')
+install.packages('quanteda.textmodels')
 #The textmodel_*() functions formerly in quanteda have 
 #now been moved to the quanteda.textmodels package.
 library(quanteda.textmodels)
@@ -19,14 +19,6 @@ library(dplyr)
 # 1 Supervised Learning: Naive Bayes     ---
 #----------------------------------------
 #source of data: https://www.kaggle.com/rmisra/news-category-dataset#News_Category_Dataset_v2.json
-#library(rjson)
-#json_file <- "/Users/pedrorodriguez/Downloads/News_Category_Dataset_v2.json"
-#con = file(json_file, "r") 
-#input <- readLines(con, -1L) 
-#news_data <- lapply(X=input,fromJSON)
-#news_data <- lapply(news_data, function(x) as_tibble(t(unlist(x))))
-#news_data <- do.call(rbind, news_data)
-#saveRDS(news_data, "~/Dropbox/NYU/Teaching/Text as Data/TaD-2018/W6_02_27_18/news_data.rds")
 
 # load data
 news_data <- readRDS("news_data.rds")
@@ -164,10 +156,6 @@ plot(nb_model$param[1,], nb_model_sm$param[1,], xlim = c(0,0.02), ylim = c(0,0.0
 
 
 ####I'd like you to have experience creating documents from scratch
-
-####Find one of the previous in-class practices and replace the existing questions and answers with these questions and your answers
-
-####Be sure to save it as a new file, with a new filename!
 
 
 

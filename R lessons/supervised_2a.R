@@ -18,8 +18,8 @@ library(dplyr)
 #----------------------------------------
 # 1 Supervised Learning: Naive Bayes     ---
 #----------------------------------------
-#source of data: https://www.kaggle.com/rmisra/news-category-dataset#News_Category_Dataset_v2.json
-
+#source of data: https://www.kaggle.com/rmisra/news-category-dataset#
+News_Category_Dataset_v2.json
 # load data
 news_data <- readRDS("news_data.rds")
 
@@ -153,11 +153,6 @@ plot(nb_model$param[1,], nb_model_sm$param[1,], xlim = c(0,0.02), ylim = c(0,0.0
 
 
 #########Practice questions:
-
-
-####I'd like you to have experience creating documents from scratch
-
-
 
 # 1. We originally set the proportion of the training set to be .8 --- what happens to performance when we set it at .2? Re-run all the code 
 ##after that point (with smoothing)

@@ -8,6 +8,8 @@ rm(list = ls())
 # set path where our data are stored
 setwd("C:/Users/kevin/Documents/GitHub/TAD_2021/R lessons/")
 
+
+
 # load required libraries
 library(quanteda)
 library(dplyr)
@@ -21,9 +23,11 @@ filenames <- list.files(path = "conservative_manifestos", full.names=TRUE)
 cons_manifestos <- lapply(filenames, readLines)
 cons_manifestos <- unlist(lapply(cons_manifestos, function(x) paste(x, collapse = " "))) # because readLines returns a vector with each elements = lines
 
+cons_manifestos[1]
+
 
 # construct data frame
-manifestos_df <- data.frame( text = cons_manifestos)
+manifestos_df <- data.frame( text = cons_manifestos, stringsAsFactors = F)
 
 
 #----------------------------------------
@@ -63,7 +67,7 @@ plot(     manifestos_lg[,"CULTURE.SPORT"],
 
 plot( 
      manifestos_lg[,"VALUES.CONSERVATIVE"],
-     xlab="Year", ylab="Conservative values", type="b", pch=19)
+     xlab="Year", ylab="Conservative values", type="b", pch=7)
 
 plot(
      manifestos_lg[,"INSTITUTIONS.CONSERVATIVE"] - manifestos_lg[,"INSTITUTIONS.RADICAL"],
@@ -96,7 +100,7 @@ plot(year,
 
 plot(year, 
      inaugural_rid_dfm[,"EMOTIONS.POSITIVE_AFFECT"],
-     xlab="Year", ylab="Narcissism", type="b", pch=19)
+     xlab="Year", ylab="Positivity", type="b", pch=19)
 
 
 

@@ -10,7 +10,7 @@ library(dplyr)
 library(caret)
 
 # set working directory
-setwd("C:/Users/kevin/Documents/GitHub/TAD_2019/R_lessons/intro_R")
+setwd("C:/Users/kevin/Documents/GitHub/TAD_2021/R lessons/")
 
 
 #----------------------------------------

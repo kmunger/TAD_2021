@@ -12,7 +12,7 @@ library(mlbench)
 library(caret)
 
 # set working directory
-setwd("C:/Users/kmm7999/Documents/GitHub/TAD_2019/R_lessons/intro_R")
+setwd("C:/Users/kevin/Documents/GitHub/TAD_2021/R lessons/")
 
 #----------------------------------------
 # 1. Load, clean and inspect data        ---
@@ -138,14 +138,6 @@ dev.new()
 bwplot(results, scales = scales)
 
 
-
-####Be sure to save it as a new file, with a new filename!
-
-
-# 1.Look at the results from the manual tuning, compared to the automatic tuning in section 5. 
-
-# 2. Why does the accuracy always increase across the three levels of the parameter in the manual tuning but not the 
-# automatic tuning? 
 
 
 

@@ -9,6 +9,7 @@ library(dplyr)
 
 library(caret)
 
+
 # set working directory
 setwd("C:/Users/kevin/Documents/GitHub/TAD_2021/R lessons/")
 
@@ -21,6 +22,9 @@ table(news_data$category)
 
 # let's work with 2 categories
 news_samp <- news_data %>% filter(category %in% c("WEIRD NEWS", "GOOD NEWS")) %>% select(headline, category) %>% setNames(c("text", "class"))
+
+
+
 
 # get a sense of how the text looks
 dim(news_samp)
@@ -49,7 +53,7 @@ library(quanteda)
 # create document feature matrix
 news_dfm <- dfm(news_samp$text, stem = TRUE, remove_punct = TRUE, remove = stopwords("english")) %>% convert("matrix")
 
-# A. the caret package has it's own partitioning function
+# A. the caret package has its own partitioning function
 set.seed(1984)
 ids_train <- createDataPartition(1:nrow(news_dfm), p = 0.8, list = FALSE, times = 1)
 train_x <- news_dfm[ids_train, ] %>% as.data.frame() # train set data

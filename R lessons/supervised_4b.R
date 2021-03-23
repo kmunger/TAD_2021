@@ -20,6 +20,8 @@ setwd("C:/Users/kevin/Documents/GitHub/TAD_2021/R lessons/")
 news_data <- readRDS("news_data.rds")
 table(news_data$category)
 
+?select
+
 # let's work with 2 categories
 set.seed(1984)
 news_samp <- news_data %>% 
@@ -27,7 +29,7 @@ news_samp <- news_data %>%
   group_by(category) %>%
   sample_n(500) %>%  # sample 250 of each to reduce computation time (for lab purposes)
   ungroup() %>%
-  select(headline, category) %>% 
+  dplyr::select(headline, category) %>% 
   setNames(c("text", "class"))
 
 # get a sense of how the text looks

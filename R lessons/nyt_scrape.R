@@ -6,6 +6,8 @@ library(ggplot2)
 library(stringr)
 
 
+##code adapted from Heather Geiger
+
 setwd("C:/Users/kevin/Documents/GitHub/TAD_2021/R lessons/")
 
 

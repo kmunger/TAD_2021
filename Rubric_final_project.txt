@@ -1,0 +1,42 @@
+
+
+Final Project: PLSC 497 
+
+
+
+The goal of this project is to apply the methods that we have learned in this class to a collection of text data in order to find out the answer to a question that you could not otherwise have answered. 
+
+
+The more detailed criteria that I'll be evaluating you on are as follows:
+
+Do you have a clearly defined question?
+
+Can you explain how the question can be answered using the text data you've chosen to analyse?
+
+Does the method (or methods) you choose appropriate to answer the question?
+
+Do you correctly collect and transform whatever corpus you're using before putting it into the model?
+
+Does your code do what you want it to do? Do you include comments on your code to explain why you take the steps you take?
+
+Do you correctly implement the model?
+
+Do you explain how the output of the model provides an answer to your question?
+
+
+
+In terms of structure, I'd like to see something like this
+
+~400 words describing the question 
+~300 words describing the text data 
+~300 words explaining the model you chose to use
+~400 words explaining the results of the model and how they answer your question
+
+These are rough guidelines; depending on whether (say) you have a straightforward question but had to do a lot of work to collect the data, you should adjust those numbers accordingly.
+
+In addition, there should be either graphs or tables in the body of the paper (ie not as part of the code) that you use to explain both your data and your results. I'd like to see one table that summarizes the important information about your corpus (number of documents, metadata), and one or more figures/tables that display the output of your model. 
+
+Finally, I'd also like to see your code, including comments where you say why you're doing what you're doing.
+
+
+

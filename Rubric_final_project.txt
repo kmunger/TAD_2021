@@ -2,6 +2,8 @@
 
 Final Project: PLSC 497 
 
+Due: May 5
+
 
 
 The goal of this project is to apply the methods that we have learned in this class to a collection of text data in order to find out the answer to a question that you could not otherwise have answered. 
